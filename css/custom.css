@@ -1,0 +1,78 @@
+body {
+    overflow-x: hidden;
+}
+h1,h2 {
+    font-family: 'Noto Sans', sans-serif;
+}
+h3,h4,h5 {
+    font-family: 'Inconsolata', monospace;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    /*font-family: 'Noto Sans', sans-serif*/
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    letter-spacing: .1em;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a::after {
+    color: white;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width ease-in-out .2s;
+}
+a:hover::after {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+section {
+    height: 100vh;
+    padding-top: 15%;
+}
+.intro {
+    color: white;
+    overflow: hidden;
+}
+.navbar {
+    padding: 16px 32px 0 32px;
+}
+.intro-title {
+    font-size: 4.5em;
+}
+.intro-sub {
+    margin-top: 2.5%;
+}
+.divider {
+    border-bottom: 2px solid;
+    width: 60%;
+    margin-top: 5%;
+}
+.intro-p {
+    margin-top: 5%;
+}
+
+/* three js shit */
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+    background: blue;
+  }
+  /* end three js */
+  .sector2 {
+      position: relative;
+  }
