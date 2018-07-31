@@ -98,8 +98,7 @@ canvas {
     border-width: 1px 0 0 1px;
     border-style: solid;
     border-color: #adadad;;
-    padding: 1%;
-    width: 40%;
+    padding: 1em 0 0 1em;
     margin-bottom: 1%;
 }
 a.accordion-head:hover {
