@@ -18,7 +18,7 @@ renderer.setClearColor(0x0000ff);
 
 
 
-var geometry = new THREE.CubeGeometry(30, 30, 30);
+var geometry = new THREE.CubeGeometry(35, 35, 35);
 var material = new THREE.MeshPhongMaterial( { color: 0x0000ef, flatShading: true, emissive: 0x2288cf, emissiveIntensity: 0.2 } );
 for ( var i = 0; i < 1000; i ++ ) {
   var mesh = new THREE.Mesh( geometry, material );
@@ -60,6 +60,7 @@ function animate(){
 }
 
 function render() {
+  
   resize();
 	renderer.render(scene, camera);
 }

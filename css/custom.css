@@ -47,9 +47,10 @@ section {
     padding: 16px 32px 0 32px;
 }
 .intro-title {
-    font-size: 4.5em;
+    font-size: 3.2em;
 }
 .intro-sub {
+    font-size: 2em;
     margin-top: 2.5%;
 }
 .divider {
@@ -59,6 +60,7 @@ section {
 }
 .intro-p {
     margin-top: 5%;
+    font-size: 1.25em;
 }
 
 /* three js shit */
@@ -69,10 +71,16 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -9999;
+    z-index: -9998;
     background: blue;
   }
   /* end three js */
-  .sector2 {
-      position: relative;
+  
+.sector2 {
+    position: relative;
+    background: #1e262c;
+  }
+.sector3 {
+    position: relative;
+    background: red;
   }

@@ -8,9 +8,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
+    <script>
+        $(function() {
+          $.scrollify({
+            section : ".scroller",
+          });
+        });
+      </script>
+
   </head>
   <body>
-
+    
     <nav class="navbar navbar-expand-lg fixed-top">
 
       <a class="navbar-item mr-auto" href="#">THEO KNIPE</a>
@@ -18,32 +29,41 @@
       
     </nav>
 
-    <section class="intro">
+    <section class="scroller intro" data-section-name="one">
       <canvas></canvas>
 
       <div class="container">
         <!--<h1 class="intro-title">I'm a graphic designer based in Pembrokeshire.</h1>-->
-        <h1 class="intro-title">I'm a graphic designer based in Pembrokeshire, Wales.</h1>
+        <h1 class="intro-title">I'm a graphic designer based in <br>Pembrokeshire, Wales.</h1>
         <h3 class="intro-sub">Welcome to my portfolio.</h3>
           <div class="divider"></div>
         <h5 class="intro-p">Check out my work...</h5>
       </div>
 
     </section>
-    <section class="sector2">
+   
+    <section class="scroller sector2" data-section-name="two">
       <div class="container">
         <h1>test</h1>
       </div>
-    </section>
-
+    </section>   
+    <section class="scroller sector3" data-section-name="three">
+      <div class="container">
+        <h1>test</h1>
+      </div>
+    </section>   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+   <!--three.js dependencies-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>
     <script src="js/TrackballControls.js"></script>
     <script src="js/three.js"></script>
+    <!--scrollify dependencies-->
+
   </body>
 </html>
