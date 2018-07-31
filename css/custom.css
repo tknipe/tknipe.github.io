@@ -79,8 +79,39 @@ canvas {
 .sector2 {
     position: relative;
     background: #1e262c;
+    color: #fff;
+    padding-top: 2.5%;
   }
 .sector3 {
     position: relative;
     background: red;
   }
+
+.leader {
+    margin-top: 5%;
+}
+.skill-group {
+    margin-top: 5%;
+}
+.skill-desc {
+    color: #dddddd;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #adadad;;
+    padding: 1%;
+    width: 40%;
+    margin-bottom: 1%;
+}
+a.accordion-head:hover {
+    border: none;
+    width: 0;
+    cursor: pointer;
+}
+a.accordion-head::after {
+    border: none;
+    width: 0;
+}
+a.accordion-head:hover::after {
+    border: none;
+    width: 0;
+}
