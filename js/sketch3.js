@@ -17,11 +17,11 @@ let slider1;
 let slider2;
 let sentence = "The future is retro"
 function preload() {
-  var font1 = loadFont('../fonts/FasterOne-Regular.ttf');
-  var font2 = loadFont('../fonts/Monoton-Regular.ttf');
-  var font3 = loadFont('../fonts/Righteous-Regular.ttf');
-  var font4 = loadFont('../fonts/Haarlem Deco DEMO.ttf');
-  var font5 = loadFont('../fonts/StiffStaff-Heavy.ttf');
+  var font1 = loadFont('../css/fonts/FasterOne-Regular.ttf');
+  var font2 = loadFont('../css/fonts/Monoton-Regular.ttf');
+  var font3 = loadFont('../css/fonts/Righteous-Regular.ttf');
+  var font4 = loadFont('../css/fonts/Haarlem Deco DEMO.ttf');
+  var font5 = loadFont('../css/fonts/StiffStaff-Heavy.ttf');
   //var font6 = loadFont('../fonts/Bazar.ttf');
 
   fonts.push(font1,font2,font3,font4,font5)
