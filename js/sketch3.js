@@ -22,6 +22,7 @@ function preload() {
 }
 
 function setup() {
+    pixelDensity(1)
     //find DOM containers and set dimensions to the canvas container
     var maincontain = document.getElementById('maincontain')
     var CW = document.getElementById('canvascontainer').offsetWidth
@@ -84,6 +85,7 @@ function setup() {
     //canvas creation and append to container
     var canvascontainer = document.getElementById('canvascontainer')
     createCanvas(CW,CH, SVG)
+
     canvascontainer.appendChild(document.getElementById('defaultCanvas0'))
     //pdf(doesn't work atm)
     // pdf = createPDF();
