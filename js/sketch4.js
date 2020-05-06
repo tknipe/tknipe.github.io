@@ -13,12 +13,12 @@ let slider1;
 let slider2;
 let sentence = "The future is retro"
 function preload() {
-  var font1 = loadFont('../css/fonts/HelveticaNeue-BoldExt.otf');
+  var font1 = loadFont('../css/fonts/HelveticaBlkIt.ttf');
   var font2 = loadFont('../css/fonts/HelveticaNeueMedium.ttf');
   var font3 = loadFont('../css/fonts/Questrial-Regular.ttf');
 //   var font4 = loadFont('../css/fonts/Haarlem Deco DEMO.ttf');
 //   var font5 = loadFont('../css/fonts/StiffStaff-Heavy.ttf');
-  fonts.push(font1,font2)
+  fonts.push(font1,font2,font3)
 }
 // let pg;
 function setup() {
@@ -137,7 +137,15 @@ function draw() {
     fill(palette[floor(random()*palette.length)])
     ellipse(random(width), random(height), txtsize * pow( 1.6, random(powlac, powfac) ))
     rect(random(width), random(height), txtsize * pow( 1.6, random(powlac, powfac) ), txtsize * pow( 1.6, random(powlac, powfac) ))
+
     }
+    if (round(random(1)) == 1) {
+        push()
+        textFont(fonts[1])
+        var plustxt = textSize(txtsize * pow( 1.6, random(powlac, powfac) ))
+        text('+',random(width), random(height))
+        pop()
+        }
     //font choice, if slider left its random or = slider value
     // rectMode(CORNERS)
     stroke(0)
@@ -164,7 +172,6 @@ function draw() {
     var xt = random(width-wt)
     var yt = random(height-ht)
     text(txtinput, xt , yt, wt, ht)
-
     //loop speed based on slider
     frameRate(loopval)
     loopslider.changed(loopdedoop)
