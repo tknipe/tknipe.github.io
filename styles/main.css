@@ -23,21 +23,28 @@
   --fs-heading: 3rem;
   --fs-subheading: 8rem;
   --fs-body: 4rem;
+  --fs-mini: 2rem;
 }
 @media (max-width: 120em) {
   :root {
-    --fs-title: 3rem;
+    --fs-title: 14rem;
     --fs-heading: 2.25rem;
-    --fs-subheading: 1.125rem;
-    --fs-body: 0.5rem;
+    --fs-subheading: 4rem;
+    --fs-body: 3rem;
+    --fs-mini: 01rem;
   }
 }
 @media (max-width: 64em) {
   :root {
-    --fs-title: 2rem;
+    --fs-title: 4rem;
     --fs-heading: 1.5rem;
-    --fs-subheading: 0.875rem;
-    --fs-body: 0.5rem;
+    --fs-subheading: 1.5rem;
+    --fs-body: 2rem;
+    --fs-mini: 0.75rem;
+
+    --pad-tight: 2rem;
+    --pad-mid: 2rem;
+    --pad-loose: 2rem;
   }
 }
 /* typography------------------------------------ */
@@ -67,9 +74,11 @@ h2 {
   font-size: var(--fs-heading);
 }
 h3,
-h4,
-h5 {
+h4 {
   font-size: var(--fs-subheading);
+}
+h5 {
+  font-size: var(--fs-mini);
 }
 body {
   background: var(--c-offwhite);
@@ -91,10 +100,14 @@ a:hover {
 }
 .temp-container {
   padding: var(--pad-tight);
-  width: 50%;
+}
+.temp-contact-container {
+  padding: var(--pad-loose);
 }
 .coming-soon-container {
   padding: var(--pad-tight);
   position: fixed;
   right: 0;
+  bottom: 0;
+  text-align: right;
 }
