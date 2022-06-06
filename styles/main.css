@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+:root {
+  --c-offwhite: #fdfaf7;
+  --c-light: #f0ede9;
+  --c-dark: #e3e0dc;
+  --c-extradark: #999794;
+  --c-black: #00000a;
+
+  --pad-tight: 4rem;
+  --pad-mid: 2rem;
+  --pad-loose: 4rem;
+
+  --ff-heading: "Syne", sans-serif;
+  --ff-body: "Syne", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --fs-title: 24rem;
+  --fs-heading: 3rem;
+  --fs-subheading: 8rem;
+  --fs-body: 4rem;
+}
+@media (max-width: 120em) {
+  :root {
+    --fs-title: 3rem;
+    --fs-heading: 2.25rem;
+    --fs-subheading: 1.125rem;
+    --fs-body: 0.5rem;
+  }
+}
+@media (max-width: 64em) {
+  :root {
+    --fs-title: 2rem;
+    --fs-heading: 1.5rem;
+    --fs-subheading: 0.875rem;
+    --fs-body: 0.5rem;
+  }
+}
+/* typography------------------------------------ */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-regular);
+  color: var(--c-black);
+  margin: 0;
+}
+p {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  color: var(--c-black);
+  margin: 0;
+}
+h1 {
+  font-size: var(--fs-title);
+}
+h2 {
+  font-size: var(--fs-heading);
+}
+h3,
+h4,
+h5 {
+  font-size: var(--fs-subheading);
+}
+body {
+  background: var(--c-offwhite);
+}
+a,
+a:active,
+a:hover {
+  color: orangered;
+}
+.logo {
+  font-weight: var(--fw-semibold);
+}
+.logo-container {
+  padding: var(--pad-tight);
+}
+.logo-span {
+  font-size: var(--fs-subheading);
+  font-weight: var(--fw-regular);
+}
+.temp-container {
+  padding: var(--pad-tight);
+  width: 50%;
+}
+.coming-soon-container {
+  padding: var(--pad-tight);
+  position: fixed;
+  right: 0;
+}
